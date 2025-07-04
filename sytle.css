@@ -1,0 +1,328 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.banner {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    /* 加入垂直置中的機制 */
+    text-align: center;
+    line-height: 400px;
+    /* 等於容器高度 */
+}
+
+.banner-content {
+    display: inline-block;
+    /* 將文字群組作為一個單位 */
+    vertical-align: middle;
+    /* 垂直置中 */
+    line-height: 1.2;
+    /* 重設行高 */
+    font-size: 36px;
+    color: white;
+}
+
+.brandStory {
+    font-size: 24px;
+}
+
+.container {
+    padding: 0 532px;
+    /* 設定容器的左右內邊距 */
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.container p {
+    gap: 3px;
+    /* 設定段落之間的間距 */
+}
+
+.slogan {
+    margin: 64px 0;
+    padding: 32px;
+    background-color: #F5FEE7;
+    /* 設定背景顏色 */
+    text-align: center;
+    /* 文字置中 */
+}
+
+.container h2 {
+    font-weight: bold;
+    /* 設定字體粗細 */
+    font-size: 20px;
+    /* 設定字體大小 */
+    color: #57A203;
+    /* 設定邊框 */
+    margin-bottom: 12px;
+    /* 設定下邊距 */
+}
+
+.container p {
+    font-size: 16px;
+    /* 設定字體大小 */
+
+}
+
+.container ul {
+    list-style: none;
+    /* 移除預設的項目符號 */
+}
+
+.introduce {
+    margin: 0 -110px;
+    /* 設定容器的左右外邊距 */
+}
+
+.introduce-textarea {
+
+    padding: 24px 110px 48px 110px;
+    /* 設定內邊距 */
+}
+
+.introduce-textarea p {
+    margin-bottom: 16px;
+    /* 移除最後一個段落的下邊距 */
+
+}
+
+.introduce-textarea p:last-child {
+    margin-bottom: 0;
+    /* 移除最後一個段落的下邊距 */
+
+}
+
+img {
+    display: block;
+    /* 使圖片成為塊級元素 */
+    max-width: 100%;
+    /* 限制圖片最大寬度為容器寬度 */
+    height: auto;
+    /* 自動調整高度以保持比例 */
+}
+
+h3 {
+    font-size: 24px;
+    /* 設定字體大小 */
+    font-weight: bold;
+    /* 設定字體粗細 */
+    margin-bottom: 24px;
+    /* 設定下邊距 */
+
+}
+
+.history,
+.concept,
+.story {
+    margin: 48px 0;
+    /* 設定列表項目的上下邊距 */
+}
+
+.history li,
+.concept li,
+.story li {
+    margin-bottom: 12px;
+    /* 設定段落的下邊距 */
+    font-size: 16px;
+    /* 設定字體大小 */
+    line-height: 1.5;
+    /* 設定行高 */
+    font-weight: 400px;
+    /* 設定字體粗細 */
+    color: #212529;
+    /* 設定字體顏色 */
+}
+
+.history li:last-child,
+.concept li:last-child,
+.story li:last-child {
+    margin-bottom: 48px;
+    /* 移除最後一個段落的下邊距 */
+}
+
+.history,
+.concept,
+.story {
+    border-bottom: 1px solid #ccc;
+}
+
+.history ul {
+    list-style: disc;
+    /* 設定項目符號樣式 */
+    list-style-position: inside;
+    /* 設定項目符號位置 */
+}
+
+.concept li {
+    border-left: 4px solid #ccc;
+    /* 設定左邊框 */
+    padding-left: 12px;
+    /* 設定左內邊距 */
+
+}
+
+.story ul li,
+.story ul li a {
+    color: #57A203;
+}
+
+.story ul li span.material-symbols-outlined {
+    display: inline-block;
+    /* 使列表項目和 span 成為行內塊元素 */
+    vertical-align: middle;
+    /* 垂直置中 */
+    margin-right: 0.5em;
+    /* icon 和文字之間的間距 */
+}
+
+.footer {
+    padding: 64px 312px;
+    text-align: center;
+    background-color: #F8F9FA;
+
+}
+
+.footer p {
+    font-size: 14px;
+    color:#6C757D;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+.footer p:last-child {
+    margin-bottom: 0;
+    /* 移除最後一個段落的下邊距 */
+}
